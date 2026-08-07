@@ -8,9 +8,9 @@
   <title>شركة النجوم للتنظيف | نظافة تليق ببيتك</title>
   <style>
     :root {
-      --blue: #078fca;
-      --deep-blue: #075c92;
-      --navy: #073b68;
+      --blue:#00A6A6;
+      --deep-blue:#007A7A;
+      --navy:#0F3D56;
       --cyan: #13c5d9;
       --yellow: #ffd341;
       --cream: #fffaf1;
@@ -234,7 +234,7 @@
     document.getElementById('bookingForm').addEventListener('submit', e => {
       e.preventDefault();
       const name = document.getElementById('customerName').value.trim(), phone = document.getElementById('customerPhone').value.trim(), service = document.getElementById('serviceType').value;
-      const message = `مرحباً شركة النجوم للتنظيف،%0Aالاسم: ${encodeURIComponent(name)}%0Aرقم الهاتف: ${encodeURIComponent(phone)}%0Aالخدمة المطلوبة: ${encodeURIComponent(service)}`;
+      const message = `مرحباً شركة النجوم للتنظيف،%0Aرقم الهاتف: ${encodeURIComponent(phone)}%0Aالخدمة المطلوبة: ${encodeURIComponent(service)}`;
       window.open(`https://wa.me/971503148498?text=${message}`, '_blank', 'noopener');
     });
   </script>
